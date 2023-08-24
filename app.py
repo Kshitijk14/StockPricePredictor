@@ -93,3 +93,23 @@ end_date = st.date_input("Enter end date to fetch records")
 if st.button("Predict Stock Price"):
     predicted_price = predict_stock_price(stock, start_date, end_date)
     st.write(f"Predicted Stock Price: {predicted_price}")
+
+# JavaScript code to display
+javascript_code = """
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "34f9a0ec-5f40-46bb-91c3-39d62e62ae77", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "1d2d2879-fd7d-4143-aa80-cf031a012b6d", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+"""
+
+# Display JavaScript code using st.components.v1.html
+st.components.v1.html(javascript_code)
