@@ -54,12 +54,12 @@ def predict_stock_price(stock, start_date, end_date):
     # Using R-squared to check accuracy in the model
     y_pred = rf.predict(X_test.values)
     r2 = r2_score(y_test, y_pred)
-    st.write("R-squared (R²) Score:", r2)
+    # st.write("R-squared (R²) Score:", r2)
 
     # Inputting Value of features
     initial_array = np.array([['x', 'y', 'z', 'a', 'b']])
     updated_array = np.concatenate((initial_array[:-1], df.tail(1).values))
-    st.write(updated_array)
+    # st.write(updated_array)
 
     # Predicting
     predicted_price = rf.predict(updated_array)
