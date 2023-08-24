@@ -26,3 +26,5 @@ Stock market prediction is the act of trying to determine the future value of a 
 ![Alt text](imgs/img-2.png)
 ### Google (Stock: GOOGL) Validation
 ![Alt text](imgs/img-3.png)
+
+## Support
