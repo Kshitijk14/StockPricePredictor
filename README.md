@@ -27,4 +27,7 @@ Stock market prediction is the act of trying to determine the future value of a 
 ### Google (Stock: GOOGL) Validation
 ![Alt text](imgs/img-3.png)
 
+## How to use the model
+- https://scribehow.com/shared/How_to_Use_the_Stock_Price_Prediction_Model__INlWz0N2RyezQWM9DW2hLw
+
 ## Support
