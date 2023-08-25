@@ -93,6 +93,8 @@ end_date = st.date_input("Enter end date to fetch records")
 if st.button("Predict Stock Price"):
     predicted_price = predict_stock_price(stock, start_date, end_date)
     st.write(f"Predicted Stock Price: {predicted_price}")
+    
+# IBM Watson Assistant
 
 # JavaScript code to display
 javascript_code = """
