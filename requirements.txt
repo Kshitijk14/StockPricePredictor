@@ -4,3 +4,5 @@ pandas
 plotly 
 scikit-learn 
 matplotlib
+nbformat
+seaborn
